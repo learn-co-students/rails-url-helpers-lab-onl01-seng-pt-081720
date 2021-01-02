@@ -1,5 +1,9 @@
+<%#aa = Student.create(:first_name => "boop", :last_name => "LOOP")%>
+<%#a = Student.create(:first_name => "Jump", :last_name => "Jack")%>
+<%#@students = [a, aa]%>
 <div>
   <% @students.each do |student| %>
-    <div><%= student.first_name + " " + student.last_name %></div>
+    <%# student.first_name + " " + student.last_name %>
+    <div><%= link_to student.to_s, student_path(student) %></div>
   <% end %>
 </div>
