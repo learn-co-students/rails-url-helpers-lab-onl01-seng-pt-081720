@@ -2,4 +2,5 @@
   <% @students.each do |student| %>
     <div><%= student.first_name + " " + student.last_name %></div>
   <% end %>
+  <div><%= link_to student.name, post_path(students) %></div>
 </div>
