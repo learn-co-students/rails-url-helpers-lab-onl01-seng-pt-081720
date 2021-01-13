@@ -15,7 +15,7 @@ class StudentsController < ApplicationController
     end
 
   def active 
-
+  @student.active == false 
   end 
 
 end
